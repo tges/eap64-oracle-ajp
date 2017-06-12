@@ -1,0 +1,37 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "jboss-image-streams",
+        "annotations": {
+            "description": "ImageStream definitions for JBoss Middleware products."
+        }
+    },
+    "items": [
+        {
+            "kind": "ImageStream",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "jboss-eap64-openshift-ajp"
+            },
+            "spec": {
+                "dockerImageRepository": "10.1.0.48:5000/jboss-eap-6/eap64-openshift-ajp",
+                "tags": [
+                    {
+                        "name": "1.0",
+                        "annotations": {
+                            "description": "JBoss EAP 6.4 S2I images.",
+                            "iconClass": "icon-jboss",
+                            "tags": "builder,eap,javaee,java,jboss,xpaas",
+                            "supports":"eap:6.4,javaee:6,java:8,xpaas:1.4",
+                            "sampleRepo": "http://ocpdns.ocp.com:8888/demo1/gmes.git",
+                            "sampleContextDir": "/",
+                            "sampleRef": "master",
+                            "version": "1.0"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
